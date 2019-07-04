@@ -4,7 +4,7 @@ $body-bg: #f8fafc;
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$line-height-base: 3;
 
 // Colors
 $blue: #3490dc;
@@ -17,3 +17,83 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$dark-background: #862125;
+
+.login-label {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.form-group  {
+    .login-input {
+        background: #EAEAEA;
+    }
+
+    .btn-orange {
+        color: #fff;
+        background-color: #FB8C00;
+        border-color: #FB8C00;
+        font-weight: bold;
+    }
+    
+    .form-check-input {
+        position: relative;
+    }
+
+    .btn-link {
+        float: right;
+        padding: 0;
+    }
+
+    .side-btn {
+        border-color: white;
+        color: white;
+        margin-top: 1.5em;
+    }
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+
+.logo-padding {
+    padding-left: 2em;
+}
+
+.dark-background {
+    background: $dark-background;
+}
+
+.login-section {
+    width: inherit;
+}
+
+.side-head {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.side-text {
+    text-align: center;
+    color: white;
+    margin: auto;
+    line-height: normal;
+}
+
+.side-top {
+    margin-top: 2em;
+}
+
+.side-bottom {
+    margin-bottom: 2em;
+    font-size: 80%;
+    text-align: left;
+}
