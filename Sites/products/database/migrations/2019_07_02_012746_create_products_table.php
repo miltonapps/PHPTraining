@@ -16,10 +16,20 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('category');
-            $table->string('brand')->default('Victoria Bitter');
+            $table->string('category_id');
+            $table->string('brand');
             $table->string('description');
-            $table->string('location')->default('Victoria, Australia');
+            $table->string('location');
+            $table->float('alcohol_percentages');
+            $table->integer('volumn_ml');
+            $table->string('type');
+            $table->integer('rating_up');
+            $table->integer('rating_down');
+            $table->float('unit_price');
+            $table->float('package_sm_price');
+            $table->integer('package_sm_qty');
+            $table->float('package_lg_price');
+            $table->integer('package_lg_qty');
             $table->timestamps();
         });
     }

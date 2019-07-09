@@ -12,9 +12,6 @@
         @endif
 
         <div class="content">
-            <div class="title m-b-md">
-                Laravel
-            </div>
 
             <div class="products">
                 @foreach ($products as $product)

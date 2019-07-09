@@ -65,6 +65,7 @@ $dark-background: #862125;
 
 .logo-padding {
     padding-left: 2em;
+    font-size: 80%;
 }
 
 .dark-background {
@@ -94,6 +95,93 @@ $dark-background: #862125;
 
 .side-bottom {
     margin-bottom: 2em;
-    font-size: 80%;
     text-align: left;
+}
+
+.products-grid {
+    margin-top: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+    .product-card {
+        width: 18em;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+.products-list-page {
+    max-width: 70em;
+    margin: 0 auto;
+    background: #F5F5F5;
+}
+
+.products-container {
+    background: #FAFAFA;
+}
+
+.product-item {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1.3em;
+}
+
+.product-text {
+    color: #A0A0A0;
+    line-height: 100%;
+    margin-bottom: 1.2em;
+}
+
+.product-name {
+    color: black;
+    text-align: center;
+    margin-bottom: 0.6em;
+    font-weight: bolder;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+.product-image {
+    max-height: 12em;
+    max-width: 4.8em;
+    margin-bottom: 0.3em;
+}
+
+.product-link {
+    background: orange;
+    color: white;
+    border: 0;
+    height: 2.4em;
+    line-height: 100%;
+    border-radius: 0.3em;
+}
+
+.product-head-banner {
+    background: #862125;
+}
+
+.product-subhead-banner {
+    background: #711B1F;
+    color: white;
+    padding: 0.4em;
+    padding-left: 1.1em;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.top-nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.product-image-wrap {
+    height: 12.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }

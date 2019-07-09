@@ -16,6 +16,17 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
+    public function show($category)
+    {
+        $products = \App\Product::paginate(9);
+
+        $cagetories = collect(new \App\Category);
+        $cagetories = $cagetories->merge(\App\Category::all());
+        $cagetories->prepend(new \App\Category(['name' => 'All']));
+        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category ]);
+        // return view('home');
+    }
+
     /**
      * Show the application dashboard.
      *
@@ -23,6 +34,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return $this->show("All");
     }
+
 }
