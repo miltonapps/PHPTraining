@@ -11,13 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    $products = \App\Product::all();
+// Route::get('/', function () {
+//     $products = \App\Product::all();
 
-    return view('welcome', ['products' => $products]);
-});
+//     return view('welcome', ['products' => $products]);
+// });
+
+//Route::get('/', 'HomeController@index')->name('home');
+Route::redirect('/', '/home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home/category/{name}', 'HomeController@show')->name('home');
+Route::get('/home/category/{name}', 'HomeController@show')->name('homeCategory');
+Route::get('/home/search/{name}', 'HomeController@search');
+Route::redirect('/home/search/', '/home');
+
+Route::get('/details/{productid}', 'DetailsController@index')->name('details');

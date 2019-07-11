@@ -11,7 +11,7 @@
             </div>
         @endif
 
-        <div class="content">
+        <div class="framework">
 
             <div class="products">
                 @foreach ($products as $product)

@@ -1,181 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-.login-label {
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-
-.form-group .login-input {
-  background: #EAEAEA;
-}
-
-.form-group .btn-orange {
-  color: #fff;
-  background-color: #FB8C00;
-  border-color: #FB8C00;
-  font-weight: bold;
-}
-
-.form-group .form-check-input {
-  position: relative;
-}
-
-.form-group .btn-link {
-  float: right;
-  padding: 0;
-}
-
-.form-group .side-btn {
-  border-color: white;
-  color: white;
-  margin-top: 1.5em;
-}
-
-.vertical-center {
-  min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
-  min-height: 80vh;
-  /* These two lines are counted as one :-)       */
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-}
-
-.logo-padding {
-  padding-left: 2em;
-  font-size: 80%;
-}
-
-.dark-background {
-  background: #862125;
-}
-
-.login-section {
-  width: inherit;
-}
-
-.side-head {
-  font-size: 2.2em;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-
-.side-text {
-  text-align: center;
-  color: white;
-  margin: auto;
-  line-height: normal;
-}
-
-.side-top {
-  margin-top: 2em;
-}
-
-.side-bottom {
-  margin-bottom: 2em;
-  text-align: left;
-}
-
-.products-grid {
-  margin-top: 2em;
-  padding-left: 6em;
-  padding-right: 6em;
-}
-
-.products-grid .product-card {
-  width: 18em;
-  padding: 0;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-.products-list-page {
-  max-width: 70em;
-  margin: 0 auto;
-  background: #F5F5F5;
-}
-
-.products-container {
-  background: #FAFAFA;
-}
-
-.product-item {
-  text-align: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding: 1.3em;
-}
-
-.product-text {
-  color: #A0A0A0;
-  line-height: 100%;
-  margin-bottom: 1.2em;
-}
-
-.product-name {
-  color: black;
-  text-align: center;
-  margin-bottom: 0.6em;
-  font-weight: bolder;
-  font-size: 1.1em;
-  font-family: sans-serif;
-}
-
-.product-image {
-  max-height: 12em;
-  max-width: 4.8em;
-  margin-bottom: 0.3em;
-}
-
-.product-link {
-  background: orange;
-  color: white;
-  border: 0;
-  height: 2.4em;
-  line-height: 100%;
-  border-radius: 0.3em;
-}
-
-.product-head-banner {
-  background: #862125;
-}
-
-.product-subhead-banner {
-  background: #711B1F;
-  color: white;
-  padding: 0.4em;
-  padding-left: 1.1em;
-}
-
-.top-nav {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  padding: 1em 0;
-}
-
-.top-nav-left {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-}
-
-.product-image-wrap {
-  height: 12.5em;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-          flex-direction: column-reverse;
-}
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11274,5 +11098,349 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-frame {
+  height: 100vh;
+}
+
+.login-label {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.form-group .login-input {
+  background: #EAEAEA;
+}
+
+.form-group .btn-orange {
+  color: #fff;
+  background-color: #FB8C00;
+  border-color: #FB8C00;
+  font-weight: bold;
+}
+
+.form-group .form-check-input {
+  position: relative;
+}
+
+.form-group .btn-link {
+  float: right;
+  padding: 0;
+}
+
+.form-group .side-btn {
+  border-color: white;
+  color: white;
+  margin-top: 1.5em;
+}
+
+.btn:hover {
+  color: gray;
+}
+
+.vertical-center {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  min-height: 40em;
+}
+
+.logo-padding {
+  padding-left: 2em;
+  font-size: 80%;
+}
+
+.dark-background {
+  background: #862125;
+}
+
+.login-section {
+  width: inherit;
+}
+
+.side-head {
+  font-size: 2.2em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.side-text {
+  text-align: center;
+  color: white;
+  margin: auto;
+  line-height: normal;
+}
+
+.side-top {
+  margin-top: 2em;
+  position: absolute;
+  top: 0;
+}
+
+.side-bottom {
+  margin-bottom: 2em;
+  position: absolute;
+  bottom: 0;
+  line-height: normal;
+}
+
+.products-grid {
+  margin-top: 2em;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.products-grid .product-card {
+  width: 18em;
+  padding: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.products-grid .page-link {
+  border: 0;
+  color: gray;
+}
+
+.products-grid .page-item.active {
+  background: white;
+}
+
+.products-grid .page-item.active .page-link {
+  background-color: #862125;
+  border-radius: 3em;
+  line-height: 0.6em;
+  padding: 0.4em;
+  margin: 0.4em;
+}
+
+.products-grid.row {
+  min-height: 30em;
+}
+
+.products-list-page {
+  max-width: 70em;
+  margin: 0 auto;
+  background: #F5F5F5;
+}
+
+.products-container {
+  background: #FAFAFA;
+}
+
+.product-item {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1.3em;
+}
+
+.product-text {
+  color: #A0A0A0;
+  line-height: 100%;
+  margin-bottom: 1.2em;
+}
+
+.product-name {
+  color: black;
+  text-align: center;
+  margin-bottom: 0.6em;
+  font-weight: bolder;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+.product-image {
+  max-height: 12em;
+  max-width: 4.8em;
+  margin-bottom: 0.3em;
+}
+
+.product-link {
+  background: orange;
+  color: white;
+  border: 0;
+  height: 2.4em;
+  line-height: 100%;
+  border-radius: 0.3em;
+}
+
+.product-head-banner {
+  background: #862125;
+}
+
+.product-subhead-banner {
+  background: #711B1F;
+  color: white;
+  padding: 0.4em;
+  padding-left: 1.1em;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.top-nav-left {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  min-height: 6em;
+}
+
+.product-image-wrap {
+  height: 12.5em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+          flex-direction: column-reverse;
+}
+
+#middle-drop-down {
+  background: orange;
+  color: white;
+}
+
+.top-nav-mid {
+  padding-right: 0;
+}
+
+.top-nav-right {
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  height: 2.7em;
+}
+
+.top-nav-mid-top {
+  display: -webkit-box;
+  display: flex;
+  height: 2.7em;
+  min-width: 100%;
+}
+
+.top-nav-mid-top .nav-link {
+  padding: 0;
+  padding-left: 0.5em;
+  width: 7em;
+}
+
+.top-nav-mid-top .search-bar {
+  max-width: 80%;
+  display: contents;
+}
+
+.top-nav-mid-top .search-bar input {
+  height: 100%;
+  width: 51vw;
+  max-width: 83%;
+  vertical-align: top;
+  padding-left: 1em;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin-right: 1em;
+  padding-right: 3em;
+}
+
+.top-nav-mid-top .search-bar .scope {
+  float: right;
+  margin-left: -2em;
+  margin-top: 0.3em;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 1.6em;
+}
+
+.top-nav-mid-top .search-bar ::-webkit-input-placeholder {
+  color: white;
+}
+
+.top-nav-mid-top .search-bar ::-moz-placeholder {
+  color: white;
+}
+
+.top-nav-mid-top .search-bar :-ms-input-placeholder {
+  color: white;
+}
+
+.top-nav-mid-top .search-bar ::-ms-input-placeholder {
+  color: white;
+}
+
+.top-nav-mid-top .search-bar ::placeholder {
+  color: white;
+}
+
+.top-nav-mid-bottom {
+  color: white;
+  font-weight: bold;
+}
+
+.top-nav-mid-bottom span {
+  padding: 1em;
+}
+
+.vertical-bar {
+  width: 0.1em;
+  height: 2em;
+  background: white;
+  margin-left: 1em;
+  margin-top: 0.3em;
+}
+
+.top-nav-right-group {
+  line-height: 1.2em;
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+}
+
+.top-nav-right-group .top-nav-right-group-text {
+  padding: 0;
+  padding-left: 0.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.top-nav-right-group .nav-link {
+  font-size: smaller;
+}
+
+.bottom-line {
+  width: 95%;
+  background: white;
+}
+
+.product-footer {
+  position: relative;
+  color: white;
+}
+
+.product-footer .year {
+  position: absolute;
+  bottom: 0.1em;
+}
+
+.product-footer .contact {
+  position: absolute;
+  bottom: 0.1em;
+  right: 2em;
 }
 

@@ -23,8 +23,12 @@ class HomeController extends Controller
         $cagetories = collect(new \App\Category);
         $cagetories = $cagetories->merge(\App\Category::all());
         $cagetories->prepend(new \App\Category(['name' => 'All']));
+
+        if ($category !== 'All')
+        {
+            $products = \App\Category::where('name', '=', $category)->firstOrFail()->products()->paginate(9);
+        }
         return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category ]);
-        // return view('home');
     }
 
     /**
@@ -37,4 +41,25 @@ class HomeController extends Controller
         return $this->show("All");
     }
 
+    public function search($keyword)
+    {
+        $products = collect(new \App\Product);
+
+        $cagetories = collect(new \App\Category);
+        $cagetories = $cagetories->merge(\App\Category::all());
+        $cagetories->prepend(new \App\Category(['name' => 'All']));
+        $category = 'All';
+
+        if ($keyword !== 'All')
+        {
+//            $productList = \App\Product::whereRaw("UPPER('.name.') LIKE '%".strtoupper($keyword)."%'")->first();
+            $productList = \App\Product::where('name', 'LIKE', "%$keyword%")->paginate(9);
+            $wordCount = count($productList);
+            if ($wordCount > 0)
+            {
+                $products=$productList;
+            }
+        }
+        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category ]);
+    }
 }

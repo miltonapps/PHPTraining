@@ -1,3 +1,5 @@
+
+@section('title', 'CLUB CONNECT')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -19,6 +21,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
     <div id="app">
@@ -74,7 +77,7 @@
         </nav> --}}
 
         <main>
-            @yield('content')
+            @yield('framework')
         </main>
     </div>
 </body>
