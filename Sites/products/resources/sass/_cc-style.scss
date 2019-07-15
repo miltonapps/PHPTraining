@@ -118,7 +118,10 @@ body {
             margin: 0.4em;
         }
     }
-
+    .pagination {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .products-grid.row {
@@ -249,6 +252,7 @@ body {
             z-index: 2;
             color: white;
             font-size: 1.6em;
+            cursor: pointer;
         }
         ::placeholder {
             color: white;

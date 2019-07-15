@@ -19,7 +19,8 @@
                     <div class="product-text">
                         ${{ $product->unit_price }} - ${{ $product->package_lg_price }}
                     </div>
-                    <button value="View" class="product-link">View</button>
+                    <button value="View" class="product-link" onclick="event.preventDefault();
+                    window.location = '/details/' + <?php echo $product->id ?>;">View</button>
                 </div>
             </div>
             @endif

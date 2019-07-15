@@ -11,13 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     $products = \App\Product::all();
-
-//     return view('welcome', ['products' => $products]);
-// });
-
-//Route::get('/', 'HomeController@index')->name('home');
 Route::redirect('/', '/home');
 
 Auth::routes();

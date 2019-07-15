@@ -28,6 +28,6 @@ class DetailsController extends Controller
         $cagetories = collect(new \App\Category);
         $cagetories = $cagetories->merge(\App\Category::all());
         $cagetories->prepend(new \App\Category(['name' => 'All']));
-        return view('details', ['product' => $product, 'categories' => $cagetories, 'currentCategory' => $product->category()->first()->name ]);
+        return view('details', ['currentProduct' => $product, 'categories' => $cagetories, 'currentCategory' => $product->category()->first()->name ]);
     }
 }

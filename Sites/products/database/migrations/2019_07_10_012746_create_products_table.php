@@ -16,7 +16,7 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('category_id');
+            $table->bigInteger('category_id')->unsigned()->index();
             $table->string('brand');
             $table->string('description');
             $table->string('location');
@@ -31,6 +31,13 @@ class CreateProductsTable extends Migration
             $table->float('package_lg_price');
             $table->integer('package_lg_qty');
             $table->timestamps();
+        });
+
+        Schema::table('products', function($table) {
+            $table->foreign('category_id')
+            ->references('id')
+            ->on('categories')
+            ->onDelete('cascade');
         });
     }
 

@@ -97,8 +97,8 @@
                         @endif
 
                         Home / Category / {{$currentCategory}} 
-                        @if ($product != null and strlen($product->name))
-                        / {{$product->name}}
+                        @if ($currentProduct != null and strlen($currentProduct->name))
+                        / {{$currentProduct->name}}
                         @endif
                     </div>
                 </div>

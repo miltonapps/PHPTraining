@@ -28,7 +28,7 @@ class HomeController extends Controller
         {
             $products = \App\Category::where('name', '=', $category)->firstOrFail()->products()->paginate(9);
         }
-        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category ]);
+        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category, 'currentProduct' => null]);
     }
 
     /**
@@ -52,7 +52,6 @@ class HomeController extends Controller
 
         if ($keyword !== 'All')
         {
-//            $productList = \App\Product::whereRaw("UPPER('.name.') LIKE '%".strtoupper($keyword)."%'")->first();
             $productList = \App\Product::where('name', 'LIKE', "%$keyword%")->paginate(9);
             $wordCount = count($productList);
             if ($wordCount > 0)
@@ -60,6 +59,6 @@ class HomeController extends Controller
                 $products=$productList;
             }
         }
-        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category ]);
+        return view('home', ['products' => $products, 'categories' => $cagetories, 'currentCategory' => $category, 'currentProduct' => null ]);
     }
 }
