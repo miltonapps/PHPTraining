@@ -77,9 +77,6 @@
                 <div class="side-text">{{ __('2 Step sign up process.') }}</div>
                 <div class="col-md-10 offset-md-1 form-group">
                         <a class="btn side-btn form-control" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
-                        {{-- <button type="submit" class="btn side-btn form-control">
-                            {{ __('Sign Up') }}
-                        </button> --}}
                 </div>
             </div>
         </div>
